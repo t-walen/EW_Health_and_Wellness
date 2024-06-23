@@ -2,26 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html{
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1>a>.icon.icon.link:before,
+h2>a>.icon.icon.link:before,
+h3>a>.icon.icon.link:before{
+content:"#";
+font-size: 0.8rem;
+}
+
+h2 > a, h3>a {
+    text-decoration: none !important;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    width: 85%;
+    padding: 50px;
+    box-shadow: 0 54px 55px rgb(78 78 78 / 25%), 0 -12px 30px rgb(78 78 78 / 25%),
+      0 4px 6px rgb(78 78 78 / 25%), 0 12px 13px rgb(78 78 78 / 25%),
+      0 -3px 5px rgb(78 78 78 / 25%);
+  }
+
+  .container input {
+    font-size: 1.2rem;
+    margin: 10px 0 10px 0px;
+    border-color: rgb(31, 28, 28);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e8f0fe;
+  }
+
+  .container textarea {
+    margin: 10px 0 10px 0px;
+    padding: 5px;
+    border-color: rgb(31, 28, 28);
+    border-radius: 5px;
+    background-color: #e8f0fe;
+    font-size: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .name div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block button {
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+  }
+
+  textarea {
+    resize: none;
+  }
