@@ -18,9 +18,9 @@ const RenderMdx = ({ blog }) => {
         return <div>Error: Blog content is not available.</div>;
       }
 
-
   const MDXContent = useMDXComponent(blog.body.code);
-    return (
+
+  return (
         <div className='col-span-8 font-in prose-lg w-max-w prose-blockquote:bg-Grey/20 prose-blockquote:p-2 prose-blockquote:px-6 prose-blockquote:border-LightPurple
         prose-blockquote:not-italic
         prose-blockquote:rounded-r-lg
