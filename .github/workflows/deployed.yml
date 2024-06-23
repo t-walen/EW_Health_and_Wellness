@@ -1,0 +1,22 @@
+name: Deploy to HostGator via FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.5.0  # Replace with a version that supports Node.js 20
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@master  # Replace with a version that supports Node.js 20
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./  # Ensure this ends with a slash and points to the root of your repository
+          server-dir: /public_html/  # Adjust this path as per your CPanel setup
