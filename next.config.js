@@ -3,9 +3,6 @@
 const { withContentlayer } = require('next-contentlayer');
 
 
-const nextConfig = {
-    distDir: 'out',
-  };
 
 
 
