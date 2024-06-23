@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./  # Ensure this ends with a slash and points to the root of your repository
-          server-dir: /public_html  # Adjust this path as per your CPanel setup
+          server-dir: /public_html/  # Adjust this path as per your CPanel setup
