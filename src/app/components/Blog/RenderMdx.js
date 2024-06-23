@@ -14,11 +14,12 @@ const RenderMdx = ({ blog }) => {
       console.log(blog);
     }, [blog]);
 
+    const MDXContent = blog && blog.body && blog.body.code ? useMDXComponent(blog.body.code) : null;
+
     if (!blog || !blog.body || !blog.body.code) {
         return <div>Error: Blog content is not available.</div>;
       }
 
-  const MDXContent = useMDXComponent(blog.body.code);
 
   return (
         <div className='col-span-8 font-in prose-lg w-max-w prose-blockquote:bg-Grey/20 prose-blockquote:p-2 prose-blockquote:px-6 prose-blockquote:border-LightPurple
