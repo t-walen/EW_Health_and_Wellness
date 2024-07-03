@@ -1,2 +1,2 @@
-# Next.js 13 Blog Tutorial: Build SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS
+# Next.js 13 :Personal Blog with Next.js, Contentlayer, and Tailwind CSS
 
