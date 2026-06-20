@@ -1,4 +1,3 @@
-
 # EW Health & Wellness
 
 A personal health and wellness blog built with Next.js, Contentlayer, and Tailwind CSS — created for a client to document and share her low-toxin lifestyle journey following a thyroid cancer diagnosis.
@@ -10,13 +9,15 @@ A personal health and wellness blog built with Next.js, Contentlayer, and Tailwi
 - Dynamic content rendering via Contentlayer
 - Responsive layout styled with Tailwind CSS
 - Optimized image loading with Next.js Image
+- Contact/subscribe form with backend email delivery via SendGrid API
 - Deployed on Render with continuous deployment from `main`
 
 ## Tech Stack
 - **Framework:** Next.js 13
 - **Content:** Contentlayer (MDX)
 - **Styling:** Tailwind CSS
+- **Backend:** SendGrid (`@sendgrid/mail`) for contact/subscribe form email delivery
 - **Deployment:** Render
 
 ## About This Project
-Designed and built independently — from initial requirements gathering with the client through deployment and ongoing content support.
+Designed and built independently as a freelance/contract project — from initial requirements gathering with the client through deployment and ongoing content support.
