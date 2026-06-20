@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect} from "react";
+import React from "react";
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import Image from "next/image";
 
@@ -10,11 +10,7 @@ const mdxComponents = {
 }
 
 const RenderMdx = ({ blog }) => {
-    useEffect(() => {
-      console.log(blog);
-    }, [blog]);
-
-    const MDXContent = useMDXComponent(blog.body.code);
+const MDXContent = useMDXComponent(blog.body.code);
 
     if (!blog || !blog.body || !blog.body.code) {
         return <div>Error: Blog content is not available.</div>;

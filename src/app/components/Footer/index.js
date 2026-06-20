@@ -6,9 +6,8 @@ import Link from "next/link";
 
 
 const Footer = () => {
-        const { register, handleSubmit, formState: { errors } } = useForm();
-        const onSubmit = data => console.log(data);
-        console.log(errors);
+        const { register, handleSubmit } = useForm();
+        const onSubmit = () => {};
 
 return (
     <footer className='mt-16 bg-Grey flex flex-col items-center text-light'>
@@ -33,7 +32,7 @@ return (
 
     </div>
     <div className='w-full mt-15 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-row items-center justify-between'>
-        <span>&copy;2024 EW Healh & Wellness</span>
+        <span>&copy;2026 EW Health & Wellness</span>
         <Link href="/sitemap.xml">sitemap.xml</Link>
 
     </div>

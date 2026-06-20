@@ -4,10 +4,6 @@ import Image from 'next/image';
 import React from 'react';
 
 
-if (typeof data !== 'undefined') {
-  } else {
-    console.error('Data is undefined.');
-  }
 const HomeCoverSection = ({ blogs }) => {
 
     const sortedBlogs = sortBlogs({blogs: allBlogs})

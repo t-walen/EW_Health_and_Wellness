@@ -18,8 +18,7 @@ const BlogDetails = ({ blog }) => {
     return (
       <div className= 'px-10 bg-Lightbrown text-Grey py-2 flex items-center justify-around flex-wrap text-xl font-medium mx-10 rounded-lg'>
         <time className='m-3'>{formattedDate}</time>
-        <span className='m-3'>10 Views</span>
-        <div className='m-3'>
+<div className='m-3'>
         {blog.readingTime.text}
         </div>
         <Link href={`/categories/${blog.tags}`} className='m-3'>

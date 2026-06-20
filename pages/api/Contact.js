@@ -2,7 +2,7 @@ import sgMail from '@sendgrid/mail';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { email, phone, first, last, message } = req.body;
+    const { email, first, last, message } = req.body;
 
     try {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       const msg = {
         to: 'lowtoxinjourney@gmail.com',
         from: 'lowtoxinjourney@gmail.com',
-        replyto: email,
+        replyTo: email,
         subject: `New message from ${first} ${last} ${email}`,
         text: message,
         html: `<p>${message}</p>`,
